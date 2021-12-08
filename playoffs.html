@@ -7,8 +7,12 @@
 input.boxes{
 	font-size:18pt;
   outline:none;
+  position: absolute;
   border:hidden;
   background-color: #72A4D2;
+  left: 20.5%;
+  width: 6%;
+  height: 4%
 }
 .container {
   position: relative;
@@ -17,56 +21,6 @@ input.boxes{
   margin-right: auto;
   text-align: center;
   color: white;
-}
-.game_1_top {
-  position: absolute;
-  top: 4.5%;
-  left: 19.5%;
-}
-.game_1_bottom {
-  position: absolute;
-  top: 10.5%;
-  left: 19.5%;
-}
-.game_2_top {
-  position: absolute;
-  top: 24.5%;
-  left: 19.5%;
-}
-.game_2_bottom {
-  position: absolute;
-  top: 30.5%;
-  left: 19.5%;
-}
-.game_3_top {
-  position: absolute;
-  top: 44.5%;
-  left: 19.5%;
-}
-.game_3_bottom {
-  position: absolute;
-  top: 50.5%;
-  left: 19.5%;
-}
-.game_4_top {
-  position: absolute;
-  top: 64.5%;
-  left: 19.5%;
-}
-.game_4_bottom {
-  position: absolute;
-  top: 70.5%;
-  left: 19.5%;
-}
-.game_5_top {
-  position: absolute;
-  top: 84.5%;
-  left: 19.5%;
-}
-.game_5_bottom {
-  position: absolute;
-  top: 90.5%;
-  left: 19.5%;
 }
 
 .box {
@@ -82,16 +36,17 @@ input.boxes{
 <body>
 <div class="container"> 
   <img src="images/playoffs.png" alt="score_guide" style="width:100%;">
-  <div class="game_1_top"><input type="text"  id="1" class="boxes" onkeyup="update()" size="5"/></div>
-  <div class="game_1_bottom"><input type="text"  id="2" class="boxes" onkeyup="update()" size="5"/></div>
-  <div class="game_2_top"><input type="text" class="boxes" onkeyup="update()" id="3" size="5"/></div>
-  <div class="game_2_bottom"><input type="text" class="boxes" onkeyup="update()" id="4" size="5"/></div>
-  <div class="game_3_top"><input type="text" class="boxes" onkeyup="update()" id="5" size="5"/></div>
-  <div class="game_3_bottom"><input type="text" class="boxes" onkeyup="update()" id="6" size="5"/></div>
-  <div class="game_4_top"><input type="text" class="boxes" onkeyup="update()" id="7" size="5"/></div>
-  <div class="game_4_bottom"><input type="text" class="boxes" onkeyup="update()" id="8" size="5"/></div>
-  <div class="game_5_top"><input type="text" class="boxes" onkeyup="update()" id="9" size="5"/></div>
-  <div class="game_5_bottom"><input type="text" class="boxes" onkeyup="update()" id="10" size="5"/></div>
+  <input type="text"  id="1" class="boxes" onkeyup="update()" style="top:4.5%;"/>
+  <input type="text"  id="2" class="boxes" onkeyup="update()" style="top:10.5%;"/>
+  <input type="text"  id="3" class="boxes" onkeyup="update()" style="top:24.5%;"/>
+  <input type="text"  id="4" class="boxes" onkeyup="update()" style="top:30.5%;"/>
+  <input type="text"  id="5" class="boxes" onkeyup="update()" style="top:44.5%;"/>
+  <input type="text"  id="6" class="boxes" onkeyup="update()" style="top:50.5%;"/>
+  <input type="text"  id="7" class="boxes" onkeyup="update()" style="top:64.5%;"/>
+  <input type="text"  id="8" class="boxes" onkeyup="update()" style="top:70.5%;"/>
+  <input type="text"  id="9" class="boxes" onkeyup="update()" style="top:84.5%;"/>
+  <input type="text"  id="10" class="boxes" onkeyup="update()" style="top:90.5%;"/>
+
 	
   <div class="box" style="top:4%;" id="michael"></div>
   <div class="box" style="top:10.7%;" id="derek"></div>
